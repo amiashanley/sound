@@ -211,3 +211,16 @@ footer p {
 .contact {
   margin-bottom: 1.5rem;
 }
+
+section {
+  padding: 1rem; /* Adds padding inside each section */
+}
+
+.content-grid {
+  padding: 0 1rem; /* Ensures content grids are padded on the left and right */
+}
+
+.content-item, iframe {
+  max-width: 100%; /* Ensures items don’t overflow */
+}
+

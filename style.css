@@ -7,49 +7,204 @@ body {
 
 header {
   text-align: center;
-  background: #333;
+  background: #000000;
   color: #fff;
-  padding: 1rem 0;
+  padding: 0.02rem 0;
+  margin: 0;
+  line-height: 1;
 }
 
 #about {
-  text-align: center;
-  margin: 2rem 0;
+  text-align: left;
+  margin: 2rem auto;
+  max-width: 800px;
+  padding: 0 2rem;
 }
 
 #about img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+  width: auto;
+  height: auto;
+  max-width: 500px;
   margin-bottom: 1rem;
+  display: block;        /* Add this */
+  margin-left: auto;     /* Add this */
+  margin-right: auto;    /* Add this */
 }
 
-.columns {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 2rem;
+.project {
+  text-align: left;
+  margin-bottom: 1.5rem;
 }
 
-.left-column, .right-column {
-  flex: 1;
-  padding: 1rem;
+.project h3 {
+  margin-bottom: 0.5rem;
 }
 
-.left-column {
-  background: #f4f4f4;
+h2 {
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  margin: 1.5rem 0;
+  color: #000000;;
 }
 
-.right-column ul {
-  list-style: none;
-  padding: 0;
+#about h3 {
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
-.right-column li {
-  margin-bottom: 1rem;
+#about h3 + p {
+  margin-top: 0;
 }
 
+.film-heading {
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  margin: 1.5rem auto;
+  background: #000000;
+  color: #fff;
+  padding: 0.5rem;
+  text-transform: uppercase;
+}
+
+.podcast-heading {
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  margin: 1.5rem 0;
+  background: #000000;
+  color: #fff;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  
+}
+
+.project p {
+  margin: 0.3rem 0;
+  line-height: 1.4;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem; /* Increase from 2rem */
+  margin: 3rem; /* Increase from 2rem */
+  max-width: 1000px; /* Add a max-width */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-item {
+  text-align: center;
+}
+
+/* Video Container Styling */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Podcast Container Styling */
+.podcast-container {
+  position: relative;
+  width: 100%;
+  height: 360px; /* Increased height to accommodate larger players */
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.podcast-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 180px; /* Fixed height for logo */
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Special case for podcasts without players - image fills full container */
+.podcast-container.image-only .podcast-logo {
+  height: 100%; /* Fill the entire 360px container */
+}
+
+.podcast-container iframe {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 180px; /* Fixed height for player - matches iframe height attribute */
+  border: 0;
+  z-index: 2;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-  .columns {
-    flex-direction: column;
+  .content-grid {
+    grid-template-columns: 1fr;
   }
+}
+
+#dynamic-title {
+  font-size: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#changing-text {
+  display: inline-block;
+  width: 8ch;
+  text-align: center;
+  margin-left: 0.5rem;
+  animation: fade-in-out 3s infinite;
+  color: goldenrod;
+}
+
+@keyframes fade-in-out {
+  0% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+footer {
+  background: #000000;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 3rem;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+footer h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+.contact {
+  margin-bottom: 1.5rem;
 }

@@ -28,6 +28,10 @@ header {
   margin: 0 auto; /* Centres the image */
 }
 
+@media (min-width: 768px) {
+  #about img {
+    max-width: 500px; /* Cap the width on larger screens */
+  }
 }
 
 .project {

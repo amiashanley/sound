@@ -22,15 +22,15 @@ header {
 }
 
 #about img {
-  max-width: 100%; /* Ensures the image doesn't exceed its container width */
-  height: auto; /* Maintains aspect ratio */
-  display: block; /* Removes any inline spacing issues */
-  margin: 0 auto; /* Centres the image */
+  max-width: 100%;
+  height: auto; 
+  display: block; 
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
   #about img {
-    max-width: 500px; /* Cap the width on larger screens */
+    max-width: 500px;
   }
 }
 
@@ -53,7 +53,7 @@ h2 {
 
 #about h3 {
   text-align: center;
-  margin-top: 0.5rem;
+  margin-top: 2rem;
   margin-bottom: 0.25rem;
 }
 
@@ -135,7 +135,7 @@ h2 {
   top: 0;
   left: 0;
   width: 100%;
-  height: 180px; /* Fixed height for logo */
+  height: 180px; /* Height for logo */
   object-fit: cover;
   z-index: 1;
 }
@@ -150,7 +150,7 @@ h2 {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 180px; /* Fixed height for player - matches iframe height attribute */
+  height: 180px;
   border: 0;
   z-index: 2;
 }
@@ -213,14 +213,13 @@ footer p {
 }
 
 section {
-  padding: 1rem; /* Adds padding inside each section */
+  padding: 1rem;
 }
 
 .content-grid {
-  padding: 0 1rem; /* Ensures content grids are padded on the left and right */
+  padding: 0 1rem;
 }
 
 .content-item, iframe {
-  max-width: 100%; /* Ensures items don’t overflow */
+  max-width: 100%; 
 }
-

@@ -34,6 +34,7 @@ header {
   }
 }
 
+
 .project {
   text-align: left;
   margin-bottom: 1.5rem;
@@ -255,3 +256,19 @@ section {
 .content-item, iframe {
   max-width: 100%; 
 }
+#about p {
+  max-width: 60ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#about h3 {
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+}
+
+#about img {
+  border-radius: 2px;
+}
+

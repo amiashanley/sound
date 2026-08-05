@@ -7,8 +7,8 @@ body {
 
 header {
   text-align: center;
-  background: #000000;
-  color: #fff;
+  background: #000000; 
+  color: goldenrod;
   padding: 0.02rem 0;
   margin: 0;
   line-height: 1;
@@ -197,28 +197,6 @@ h2 {
   .content-grid {
     grid-template-columns: 1fr;
   }
-}
-
-#dynamic-title {
-  font-size: 2rem;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#changing-text {
-  display: inline-block;
-  width: 8ch;
-  text-align: center;
-  margin-left: 0.5rem;
-  animation: fade-in-out 3s infinite;
-  color: goldenrod;
-}
-
-@keyframes fade-in-out {
-  0% { opacity: 1; }
-  100% { opacity: 1; }
 }
 
 footer {

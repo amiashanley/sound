@@ -14,6 +14,10 @@ header {
   line-height: 1;
 }
 
+header h1 {
+  font-family: Arial, sans-serif;
+}
+
 #about {
   text-align: left;
   margin: 2rem auto;

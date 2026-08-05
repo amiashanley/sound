@@ -67,21 +67,10 @@ h2 {
 }
 
 .film-heading {
-  font-family: Arial, sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   font-size: 2rem;
   text-align: center;
   margin: 1.5rem auto;
-  background: #000000;
-  color: #fff;
-  padding: 0.5rem;
-  text-transform: uppercase;
-}
-
-.podcast-heading {
-  font-family: Arial, sans-serif;
-  font-size: 2rem;
-  text-align: center;
-  margin: 1.5rem 0;
   background: #000000;
   color: #fff;
   padding: 0.5rem;
